@@ -27,7 +27,6 @@ const ImageGallery = () => {
         setSelectedImage(null);
     };
 
-
     return (
         <div className="bg-[#f6faf9] p-5">
             <div className="mx-auto w-full max-w-7xl">
@@ -41,10 +40,10 @@ const ImageGallery = () => {
                             <img
                                 src={item.imageurl}
                                 alt={item.name}
-                                className="max-w-full max-h-full rounded-lg hover:opacity-80"
+                                className="max-w-full max-h-full rounded-lg hover:opacity-80 transition-opacity duration-300 ease-in-out"
                             />
                             <p
-                                className="opacity-0 absolute inset-0 flex justify-center items-center text-white text-3xl font-bold bg-black bg-opacity-50 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer"
+                                className="opacity-0 absolute rounded-lg inset-0 flex justify-center items-center text-white text-3xl font-bold bg-black bg-opacity-50 group-hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer"
                                 onClick={() => openPopup(item)}
                             >
                                 <FiPlusCircle />
@@ -55,8 +54,8 @@ const ImageGallery = () => {
             </div>
             {selectedImage && (
                 <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-90" onClick={closePopup}>
-                    <div className="max-w-[90%] max-h-[90%] lg:max-w-[70%] lg:max-h-[70%] relative">
-                        <IoMdCloseCircleOutline className="absolute top-0 right-0 m-4 text-white cursor-pointer" size={30} onClick={closePopup} />
+                    <div className="max-w-[90%] max-h-[90%] lg:max-w-[70%] lg:max-h-[70%] relative transition-opacity duration-300 ease-in-out">
+                        <IoMdCloseCircleOutline className="absolute top-0 right-0 m-5 text-white cursor-pointer" size={30} onClick={closePopup} />
                         <img
                             src={selectedImage.imageurl}
                             alt={selectedImage.name}
@@ -67,7 +66,7 @@ const ImageGallery = () => {
                 </div>
             )}
         </div>
-    )
-}
+    );
+};
 
-export default ImageGallery
+export default ImageGallery;
