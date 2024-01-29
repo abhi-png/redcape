@@ -9,17 +9,26 @@ const Footer = () => {
                 <div className="mx-auto w-full max-w-7xl px-8">
                     <div className="mx-auto grid w-full grid-cols-1 gap-20 py-12 md:grid-cols-2 lg:grid-cols-3">
                         <div>
-                            <h1 className="text-white text-3xl font-bold mb-3">About us</h1>
-                            <p className=" text-gray-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div className="flex gap-4 items-center">
+                                <h1 className="text-white text-3xl font-bold mb-3">About us</h1>
+                                <p className="text-white w-[30%] bg-blue-gray-100 h-[2.5px] rounded-full"></p>
+                            </div>
+                            <p className="text-gray-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                         <div>
-                            <h1 className="text-white text-3xl font-bold mb-3">Get in Touch</h1>
-                            <p className="mb-2 text-gray-400 font-bold">Address: <span className="font-thin text-gray-500">66 South Street, <br /> Window & Wonderland</span></p>
-                            <p className="mb-2 text-gray-400 font-bold">Phone: <span className="font-thin text-gray-500">+440 875369208 - Office <br /> +440 353363114 - Fax</span></p>
-                            <p className="text-gray-400 font-bold">Email: <span className="font-thin text-gray-500">freepik@sitename.com</span></p>
+                            <div className="flex gap-4 items-center">
+                                <h1 className="text-white text-3xl font-bold mb-3">Get in Touch</h1>
+                                <p className="text-white w-[30%] bg-blue-gray-100 h-[2.5px] rounded-full"></p>
+                            </div>
+                            <p className="mb-2 text-gray-400 font-bold">Address: <span className="text-sm/[20px] font-thin text-gray-500">66 South Street, Window & Wonderland</span></p>
+                            <p className="mb-2 text-gray-400 font-bold">Phone: <span className="text-sm/[20px] font-thin text-gray-500">+440 875369208 - Office, <br /> +440 353363114 - Fax</span></p>
+                            <p className="text-gray-400 font-bold">Email: <span className="text-sm/[20px] font-thin text-gray-500">freepik@sitename.com</span></p>
                         </div>
                         <div>
-                            <h1 className="text-white text-3xl font-bold mb-3">Social Media</h1>
+                            <div className="flex gap-4 items-center">
+                                <h1 className="text-white text-3xl font-bold mb-3">Social Media</h1>
+                                <p className="text-white w-[30%] bg-blue-gray-100 h-[2.5px] rounded-full"></p>
+                            </div>
                             <p className=" text-gray-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                             <div className="flex gap-4 text-blue-gray-900 sm:justify-start mt-5">
                                 <Typography as="a" href="#" className="text-white opacity-80 transition-opacity hover:opacity-100 bg-cyan-600 p-2 rounded-full">
