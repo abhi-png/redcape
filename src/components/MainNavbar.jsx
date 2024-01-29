@@ -133,7 +133,7 @@ function NavList() {
             className="font-medium text-white"
          >
             <ListItem className="flex items-center gap-2 py-2 pr-4">
-               CURD
+               CRUD
             </ListItem>
          </Typography>
       </List>
