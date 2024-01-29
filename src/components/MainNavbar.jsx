@@ -179,7 +179,9 @@ const MainNavbar = () => {
             <Collapse open={openNav}>
                <NavList />
             </Collapse>
+            <p className="text-white w-[100%] bg-blue-gray-100 h-[2.5px] rounded-full my-2 hidden md:block"></p>
          </Navbar>
+         
       </div>
 
    )
