@@ -4,15 +4,14 @@ import React from "react"
 const VideoCard = () => {
     return (
         <div className="mb-14 p-5 bg-[#444643]">
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-20 max-w-7xl mx-auto my-5">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-20 max-w-7xl mx-auto my-5">
                 <div>
                     <iframe 
                         className="h-[210px] w-[370px] md:h-[280px] md:w-[500px]"
                         src="https://www.youtube.com/embed/LXb3EKWsInQ?si=vj0prA7TuQjLXr5t" 
                         title="YouTube video player" 
-                        frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                 </div>
                 <div>

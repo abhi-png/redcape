@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Collapse, Typography, IconButton, List, ListItem, Menu, MenuHandler, MenuList, MenuItem, } from "@material-tailwind/react";
 import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navListMenuItems } from "../data";
+import { Link } from "react-router-dom";
 
 function NavListMenu() {
    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -154,11 +155,10 @@ const MainNavbar = () => {
          <Navbar className="mx-auto max-w-screen-xl px-4 py-2 bg-[#6c9283] rounded-none shadow-none border-none">
             <div className="flex items-center justify-between text-blue-gray-900">
                <Typography
-                  href="/"
                   variant="h6"
                   className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-white"
                >
-                  LOGO
+               <Link to="/">LOGO</Link>
                </Typography>
                <div className="hidden lg:block">
                   <NavList />
